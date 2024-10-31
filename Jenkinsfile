@@ -6,7 +6,7 @@ node {
         
         stage('Pull') {
             try {
-                git branch: 'main', credentialsId: 'github-server', url: 'https://github.com/YeonjiKim0316/fisa03-springboot.git'
+                git branch: 'main', credentialsId: 'githubserver3', url: 'https://github.com/YeonjiKim0316/fisa03-springboot.git'
                 echo "Stage Pull success"
             } catch (Exception e) {
                 echo "Stage Pull failed"
